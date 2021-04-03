@@ -1,0 +1,41 @@
+.ThoughtsList ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+}
+
+.ThoughtsList{
+  padding-top: 120px
+}
+
+.ThoughtsList_button-container {
+    max-width: 380px;
+    margin: 0 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+  
+  .ThoughtsList_button-container {
+    max-width: 380px;
+    margin: 0 10px;
+  }
+
+  .ThoughtsList_button-two {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 50px;
+  }
+
+
+  .ThoughtList_total-thoughts{
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  
+  .NoteListMain__add-note-button {
+    margin: 0 auto 20px;
+  }
+  .NoteListMain__add-note-button:hover {
+    background-color: #29862e;
+    color: white;
+  }
