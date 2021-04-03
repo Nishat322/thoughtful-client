@@ -24,9 +24,10 @@ class ThoughtsList extends Component {
                         type = 'button'
                         className = 'ThoughtsList_add-thought-button'
                     >
-                        Add a Thought
+                        <header> <h2>Add Your Own Thought </h2></header>
                     </Button>
                 </div>
+                <Link to = '/'> Back to Home Page </Link>
                 <ul>
                     {thoughts.map(thought =>
                         <li key = {thought.id}>
@@ -39,16 +40,6 @@ class ThoughtsList extends Component {
                         </li>    
                     )}
                 </ul>
-                <div className = 'ThoughtsList_button-two'>
-                    <Button
-                        tag = {Link}
-                        to = '/add-thought'
-                        type = 'button'
-                        className = 'ThoughtsList_add-thought-button'
-                    >
-                        Add a Thought
-                    </Button>
-                </div>
             </div>
         )
     }

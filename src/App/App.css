@@ -1,4 +1,4 @@
-.App {
+/* .App {
  
     
   }
@@ -18,12 +18,12 @@
   .App_header a {
     color: #3a0606;
     font-size: 72px;
-  }
-  
+  } */
+
+    
   .App_main {
     background-color: #ffffff;
     grid-area: main;
     height: calc(100vh - 120px);
     overflow: auto;
   }
-  

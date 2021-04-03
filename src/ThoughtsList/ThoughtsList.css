@@ -5,23 +5,12 @@
 }
 
 .ThoughtsList{
-  padding-top: 120px
+  padding-top: 50px
 }
 
-.ThoughtsList_button-container {
-    max-width: 380px;
-    margin: 0 10px;
-    display: flex;
-    flex-direction: row;
-}
 
-  
+
   .ThoughtsList_button-container {
-    max-width: 380px;
-    margin: 0 10px;
-  }
-
-  .ThoughtsList_button-two {
       display: flex;
       justify-content: center;
       margin-bottom: 50px;

@@ -14,11 +14,13 @@ class App extends Component {
         error: null,
     }
 
+
     addThought = thought => {
         this.setState({
             thoughts: [ ...this.state.thoughts, thought]
         })
     }
+
 
     componentDidMount(){
         fetch(`${config.API_ENDPOINT}/thoughts`)
@@ -41,9 +43,6 @@ class App extends Component {
 
         return (  
             <div className = "App">
-                <header className = 'App_header'>
-                    <h1><Link to = '/thoughts'> Thoughtful Thoughts </Link> </h1>
-                </header>
                 <ThoughtsContext.Provider value = {contextValue}>
                     <Route 
                         exact path = '/'
