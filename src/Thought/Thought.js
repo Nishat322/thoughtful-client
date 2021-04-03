@@ -6,7 +6,7 @@ import './Thought.css'
 
 class Thought extends Component {
     static defaultProps = {
-        onClickDelete: () => {}
+        onDeleteThought: () => {}
     }
 
     static contextType = ThoughtsContext
@@ -29,7 +29,7 @@ class Thought extends Component {
             })
             .then(()=> {
                 this.context.deleteThought(thoughtId)
-                this.props.onClickDelete(thoughtId)
+                this.props.onDeleteThought(thoughtId)
             })
             .catch(error => {
                 console.log({error})
@@ -38,20 +38,20 @@ class Thought extends Component {
 
 
     render() { 
-        console.log('these are the props', this.props)
+        const {thought, author, date_added} = this.props
         return ( 
                 <div className = 'Thought'>
                     <h2 className = 'Thought_line'>
-                        {`"${this.props.thought}"`}
+                        {`"${thought}"`}
                     </h2>
-                    <h4> Dumped by {this.props.author ? this.props.author :'anonmymous' }</h4>
+                    <h4> Dumped by {author ? author :'anonmymous' }</h4>
                     <button className = 'Thought_delete' type = 'button' onClick={this.handleClickDelete}>
                         Remove
                     </button>
                     <div className = 'Thought_date'>
                         Date Added {' '}
                         <span className = 'Thought_date-format'>
-                            {this.props.date_added}
+                            {date_added}
                         </span>
                     </div>
                 </div>

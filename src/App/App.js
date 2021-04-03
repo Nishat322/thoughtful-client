@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {Route,Link} from 'react-router-dom'
+import {Route} from 'react-router-dom'
 
 import ThoughtsContext from '../ThoughtsContext'
 import ThoughtsList from '../ThoughtsList/ThoughtsList'
@@ -14,14 +14,6 @@ class App extends Component {
         error: null,
     }
 
-
-    addThought = thought => {
-        this.setState({
-            thoughts: [ ...this.state.thoughts, thought]
-        })
-    }
-
-
     componentDidMount(){
         fetch(`${config.API_ENDPOINT}/thoughts`)
             .then(res =>
@@ -35,10 +27,24 @@ class App extends Component {
                 console.error({error})
             })
     }
+
+    addThought = thought => {
+        this.setState({
+            thoughts: [ ...this.state.thoughts, thought]
+        })
+    }
+
+    deleteThought = thoughtId => {
+        this.setState({
+            thoughts: this.state.thoughts.filter(thought => thought.id !== thoughtId)
+        })
+    }
+
     render() { 
         const contextValue = {
             thoughts: this.state.thoughts,
-            addThought: this.addThought
+            addThought: this.addThought,
+            deleteThought: this.deleteThought
         }
 
         return (  

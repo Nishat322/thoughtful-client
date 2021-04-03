@@ -27,13 +27,20 @@ class ThoughtsList extends Component {
                         <header> <h2>Add Your Own Thought </h2></header>
                     </Button>
                 </div>
-                <Link to = '/'> Back to Home Page </Link>
+                <div className = 'ThoughtsList_headline'>
+                    <Link to = '/'> Back to Home Page </Link>
+                    <span className = 'ThoughtList_total'>
+                        Total Thoughts Currently: {thoughts.length}
+                    </span>
+                </div>
+                
                 <ul>
                     {thoughts.map(thought =>
                         <li key = {thought.id}>
                             <Thought
                                 id = {thought.id}
                                 thought = {thought.thought_name}
+                                author = {thought.author}
                                 date_added = {thought.date_added}
                             />
                             <br/>
