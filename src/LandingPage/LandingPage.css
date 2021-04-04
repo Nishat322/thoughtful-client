@@ -14,9 +14,7 @@
 
 .LandingPage_enter {
     display: flex;
-    justify-content: center;
-    
-    
+    justify-content: center;   
 }
 
 .LandingPage_enter a {
