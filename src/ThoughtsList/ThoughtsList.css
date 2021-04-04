@@ -8,23 +8,23 @@
   padding-top: 50px
 }
 
+.ThoughtsList_button-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
 
+.ThoughtsList_button-container h2{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding-bottom: 25px;
+}
 
-  .ThoughtsList_button-container {
-      display: flex;
-      justify-content: center;
-      margin-bottom: 50px;
-  }
+.ThoughtsList_headline{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bolder;
+    font-size: 18px;
 
-
-  .ThoughtList_total-thoughts{
-      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  }
-  
-  .NoteListMain__add-note-button {
-    margin: 0 auto 20px;
-  }
-  .NoteListMain__add-note-button:hover {
-    background-color: #29862e;
-    color: white;
-  }
+}
+.ThoughtsList_headline a{
+  text-decoration: none;
+}

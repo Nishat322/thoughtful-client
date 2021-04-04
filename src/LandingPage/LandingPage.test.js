@@ -1,9 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Button from './Button'
+import {BrowserRouter} from 'react-router-dom'
+import LandingPage from './LandingPage'
 
 it('renders wihtout crashing', () => {
     const div = document.createElement('div')
-    ReactDOM.render(<Button/>, div)
+    ReactDOM.render(<BrowserRouter><LandingPage/></BrowserRouter>, div)
     ReactDOM.unmountComponentAtNode(div)
 })

@@ -1,7 +1,5 @@
 import React from 'react'
 
-import './Button.css'
-
 function Button (props){
     const { tag, className, children, ...otherProps } = props
 

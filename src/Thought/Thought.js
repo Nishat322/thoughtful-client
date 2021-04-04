@@ -6,7 +6,7 @@ import './Thought.css'
 
 class Thought extends Component {
     static defaultProps = {
-        onDeleteThought: () => {}
+        onDeleteThought: () => {},
     }
 
     static contextType = ThoughtsContext
