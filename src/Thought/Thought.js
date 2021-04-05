@@ -23,16 +23,14 @@ class Thought extends Component {
         })
             .then(res => {
                 if(!res.ok){
-                    return res.json().then(e => Promise.reject(e))
+                    throw new Error ('Delete Failed')
                 }
-                return res.json()
             })
             .then(()=> {
                 this.context.deleteThought(thoughtId)
-                this.props.onDeleteThought(thoughtId)
             })
-            .catch(error => {
-                console.log({error})
+            .catch((error) => {
+                console.log(error)
             })
     }
 
