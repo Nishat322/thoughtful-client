@@ -2,7 +2,7 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Live application: []()
+Live application: [https://thoughtful-client-nishat322.vercel.app/](https://thoughtful-client-nishat322.vercel.app/)
 
 API Repo: [https://github.com/Nishat322/thoughts-api](https://github.com/Nishat322/thoughts-api)
 
