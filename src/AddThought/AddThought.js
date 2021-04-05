@@ -50,7 +50,6 @@ class AddThought extends Component {
     }
 
     render() { 
-        const {error} = this.state
         return (  
             <div className = 'AddThought'>
                 <h2> What are you thinking about? </h2>
