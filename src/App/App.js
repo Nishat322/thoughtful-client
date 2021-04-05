@@ -20,7 +20,6 @@ class App extends Component {
                 !res.ok ? res.json().then((e) => Promise.reject(e)) : res.json()
             )
             .then((thoughts) => {
-                console.log(thoughts)
                 this.setState({ thoughts })
             })
             .catch(error => {
