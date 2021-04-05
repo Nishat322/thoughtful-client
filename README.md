@@ -15,7 +15,7 @@ Thoughtful allows users to see a list of thoughts submitted by any visitor to th
 ![LandingPage](images/landingPage.png)
 
 ### Thoughts Page
-![Thoughts Page](images/thoughts.png)
+![Thoughts Page](images/thoughtsPage.png)
 
 ### Add Thoughts Page
 ![Add Thoughts Page](images/addThoughtsPage.png)
